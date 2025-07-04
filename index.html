@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>elmaleka gold </title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+        @keyframes buttonBounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0);}
+            40% { transform: translateY(-10px);}
+            60% { transform: translateY(-5px);}
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #262525;
+            font-family: 'Roboto', sans-serif;
+            color: #ecf0f1;
+            animation: fadeInUp 1s ease-out;
+            direction: rtl;
+        }
+        .container-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        .logo {
+            margin-bottom: 20px;
+            max-width: 180px;
+            width: 60vw;
+            animation: fadeInUp 1s ease-out;
+            animation-delay: 0.3s;
+            animation-fill-mode: both;
+        }
+        .container {
+            text-align: center;
+            background: #C0C0C0;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            max-width: 500px;
+            width: 95vw;
+            margin: 0 auto;
+            animation: fadeInUp 1s ease-out;
+            animation-delay: 0.5s;
+            animation-fill-mode: both;
+        }
+        .container h1 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: #333333;
+            animation: fadeInUp 1s ease-out;
+            animation-delay: 1s;
+            animation-fill-mode: both;
+        }
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px auto;
+            padding: 15px 25px;
+            font-size: 18px;
+            color: #564424;
+            background-image: linear-gradient(45deg, #C4A233, #C4A233);
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.3s ease;
+            max-width: 300px;
+            width: 100%;
+            animation: buttonBounce 2s infinite;
+            box-sizing: border-box;
+            gap: 8px;
+        }
+        .button:hover, .button:focus {
+            background-image: linear-gradient(45deg, #70582e, #70582e);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            outline: none;
+        }
+        .button:active {
+            transform: translateY(1px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+        .button svg {
+            width: 22px;
+            height: 22px;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            .container h1 {
+                font-size: 18px;
+            }
+            .button {
+                font-size: 15px;
+                padding: 12px 10px;
+            }
+            .logo {
+                max-width: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-wrapper">
+        <img src="logo elmaleka 22.png" alt="ALL IN ONE" class="logo">
+        <div class="container">
+            <h1> الملكة M لطلبات الذهب و الفضة  </h1>
+            
+            <!-- Font Awesome CDN -->
+
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+            <a href="https://www.facebook.com/profile.php?id=61569060066722&sk=about" class="button" target="_blank" rel="noopener">
+                <i class="fab fa-facebook-f"></i>
+                صفحة الفيسبوك
+            </a>
+            <a href="https://t.me/elmalekam2" class="button" target="_blank" rel="noopener">
+                <i class="fab fa-telegram-plane"></i>
+                قناة التليجرام
+            </a>
+            <a href="00000000000000000000000000000000" class="button" target="_blank" rel="noopener">
+                <i class="fas fa-globe"></i>
+                موقعنا الرسمي
+            </a>
+            <a href="00000000000000000000000000000000" class="button" target="_blank" rel="noopener">
+                <i class="fab fa-linkedin-in"></i>
+                Linkedin
+            </a>
+            <a href="https://www.instagram.com/queenm20201/" class="button" target="_blank" rel="noopener">
+                <i class="fab fa-instagram"></i>
+                instagram
+            </a>
+        </div>
+    </div>
+    <script>
+          //     FOR MOBILE TOUCH EVENTS
+          
+        
+        document.querySelectorAll('.button').forEach(btn => {
+            btn.addEventListener('touchstart', function() {
+                this.classList.add('active');
+            });
+            btn.addEventListener('touchend', function() {
+                this.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html></a>
